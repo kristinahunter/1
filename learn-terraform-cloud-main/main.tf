@@ -2,7 +2,7 @@ provider "aws" {
   region = var.region
 }
 
-daa "aws_ami" "ubuntu" {
+data "aws_ami" "ubuntu" {
   most_recent = true
 
   filter {
